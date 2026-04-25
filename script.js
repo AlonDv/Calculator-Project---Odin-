@@ -26,17 +26,17 @@ let secondNum = 10;
 function operate(operator, firstNum, secondNum){
     switch(operator){
         case "+":
-            return add(firstNum,secondNum);
+            return add(+firstNum,+secondNum);
             
         
         case "-":
-            return subtract(firstNum,secondNum); 
+            return subtract(+firstNum,+secondNum); 
 
         case "*":
-            return multiply(firstNum, secondNum);
+            return multiply(+firstNum, +secondNum);
 
         case "/":
-            return divide(firstNum, secondNum); 
+            return divide(+firstNum, +secondNum); 
     }   
 }
 
